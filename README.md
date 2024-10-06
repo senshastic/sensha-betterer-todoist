@@ -29,7 +29,8 @@ Install the css using Stylus
 
 Once you have Stylus, you can install it directly clicking here: 
 
-[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://raw.githubusercontent.com/senshastic/sensha-betterer-todoist/master/todoist_less.user.css)
+[![Install directly with Stylus](https://img.shields.io/badge/Install%20directly%20with-Stylus-238b8b.svg)](https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/css/todoist_less.user.css)
+
 
 Install the js script using whatever people use to manage userscripts. I used [ViolentMonkey](https://violentmonkey.github.io/) because that's what Fallen used. 
 
