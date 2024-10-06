@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           sensha's betterer todoist
 @namespace      github.com/openstyles/stylus
-@version        2.0.4
+@version        2.1.0
 @description    A new userstyle
 @author         sensha
 @updateURL		https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/js/todoist_less_css.less
@@ -154,7 +154,12 @@
 	.menu_list,
 	.Wc4wki5,
 	.zlBVInu,
-	.task_editor {
+	.task_editor,
+	.form_field_control,
+	div[data-open="true"][role="dialog"][data-wide-modal],
+	div[data-open="true"][role="dialog"][data-enter="true"],
+	.IV3aBjz,
+	div[role="listbox"][data-dialog][data-open="true"] {
 		background-color: rgba(5, 5, 5, 0.281) !important;
 		border-radius: 12px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -162,6 +167,38 @@
 		-webkit-backdrop-filter: blur(100px);
 		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 		padding: 5px;
+	}
+
+	.cpnuPrF,
+	.eeKYrIy,
+	.OhQMAqj,
+	.WnUB0OK,
+	.T24Zjm0,
+	.c5sAvth,
+	.chMV2JN,
+	.dea25485 {
+		border-color: #cfcdcd3f !important;
+	}
+
+
+	._3930afa0:hover:not([aria-disabled=true]) {
+		background-color: rgba(5, 5, 5, 0) !important;
+		border-radius: 12px;
+		box-shadow: 0 8px 15px rgba(0, 0, 0, 0.37);
+		backdrop-filter: blur(100px) saturate(110%);
+		-webkit-backdrop-filter: blur(100px);
+		transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+		transform: translateY(-2px);
+	}
+
+	.dropdown_select__option--highlighted,
+	[role="menuitem"][data-active-item="true"] {
+		border: 1px solid rgba(0, 204, 255, 0.6);
+		background-color: rgba(5, 5, 5, 0.35) !important;
+		box-shadow: 0 0 10px 2px rgba(0, 204, 255, 0.3);
+		transform: translateY(-2px);
+		transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+		border-radius: 12px;
 	}
 
 	/* Board section and button styling */

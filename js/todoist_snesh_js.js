@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        sensha's betterer todoist
-// @version     2.4
+// @version     2.0
 // @namespace   Violentmonkey Scripts
 // @description Collapse the sidebar, apply acrylic effect to additional elements, replace button with an image, and add footer text.
 // @match       https://app.todoist.com/*
