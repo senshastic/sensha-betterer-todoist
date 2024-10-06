@@ -27,7 +27,7 @@ Install the css using Stylus
 -   [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us/)
 -   [Chrome](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
 
-Install the js script using whatever people use to manage userscripts. I used [ViolentMonkey](https://violentmonkey.github.io/)) because that's what Fallen used. 
+Install the js script using whatever people use to manage userscripts. I used [ViolentMonkey](https://violentmonkey.github.io/) because that's what Fallen used. 
 
 
 ### Credits 
