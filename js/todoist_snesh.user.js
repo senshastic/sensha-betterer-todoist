@@ -1,11 +1,11 @@
 // ==UserScript==
 // @name        sensha's betterer todoist
-// @version     2.0
+// @version     2.0.1
 // @namespace   Violentmonkey Scripts
 // @description Collapse the sidebar, apply acrylic effect to additional elements, replace button with an image, and add footer text.
 // @match       https://app.todoist.com/*
-// @downloadURL https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/js/todoist_snesh_js.user.js
-// @updateURL   https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/js/todoist_snesh_js.user.js
+// @downloadURL https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/js/todoist_snesh.user.js
+// @updateURL   https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/js/todoist_snesh.user.js
 // @author      sensha
 // @grant       none
 // ==/UserScript==
