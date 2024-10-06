@@ -4,7 +4,7 @@
 @version        2.1.0
 @description    A new userstyle
 @author         sensha
-@updateURL		https://raw.githubusercontent.com/senshastic/sensha-betterer-todoist/master/todoist_less.user.css
+@updateURL		https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/css/todoist_less.user.css
 @preprocessor 	less 
 @var color   	gradcolor1 "Gradient Color 1" rgb(43, 1, 91)
 @var color   	gradcolor2 "Gradient Color 2" rgb(122, 2, 54)
