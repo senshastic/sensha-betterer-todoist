@@ -45,4 +45,4 @@ Install the js script using whatever people use to manage userscripts. I used [V
 Nins - I am sorry you are jealous of my newfound frontend skills. 
 
 
-![](assets/itsshiny_todoist.png)
+![](assets/itshiny_todoist.png)
