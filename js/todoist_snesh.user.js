@@ -6,6 +6,7 @@
 // @match       https://app.todoist.com/*
 // @downloadURL https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/js/todoist_snesh.user.js
 // @updateURL   https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/js/todoist_snesh.user.js
+// @icon        https://cdn.discordapp.com/emojis/1245456048383459439.webp?size=240&quality=lossless
 // @author      sensha
 // @grant       none
 // ==/UserScript==
