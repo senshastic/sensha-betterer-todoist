@@ -132,7 +132,7 @@
 
             // Create a new img element
             let newImage = document.createElement('img');
-            newImage.src = 'https://cdn.discordapp.com/emojis/1245456048383459439.webp?size=240&quality=lossless';
+            newImage.src = 'https://github.com/senshastic/sensha-betterer-todoist/blob/main/assets/Hap.png?raw=true';
             newImage.alt = 'Button Image';
             newImage.style.width = '24px';  // Set the desired size for the image
             newImage.style.height = '24px';

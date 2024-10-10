@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name        sensha's betterer todoist
-// @version     2.0.1
+// @version     2.0.2
 // @namespace   Violentmonkey Scripts
 // @description Collapse the sidebar, apply acrylic effect to additional elements, replace button with an image, and add footer text.
 // @match       https://app.todoist.com/*
 // @downloadURL https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/js/todoist_snesh.user.js
 // @updateURL   https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/js/todoist_snesh.user.js
-// @icon        https://cdn.discordapp.com/emojis/1245456048383459439.webp?size=240&quality=lossless
+// @icon        https://github.com/senshastic/sensha-betterer-todoist/blob/main/assets/Hap.png?raw=true
 // @author      sensha
 // @grant       none
 // ==/UserScript==
@@ -125,7 +125,7 @@
             button.style.padding = '0';
 
             let newImage = document.createElement('img');
-            newImage.src = 'https://cdn.discordapp.com/emojis/1245456048383459439.webp?size=240&quality=lossless';
+            newImage.src = 'https://github.com/senshastic/sensha-betterer-todoist/blob/main/assets/Hap.png?raw=true';
             newImage.alt = 'Button Image';
             newImage.style.width = '24px';
             newImage.style.height = '24px';
