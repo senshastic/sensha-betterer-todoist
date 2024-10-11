@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           sensha's betterer todoist
 @namespace      github.com/openstyles/stylus
-@version        2.1.2
+@version        2.1.3
 @description    A new userstyle
 @author         sensha
 @updateURL		https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/css/todoist_less.user.css
@@ -159,7 +159,12 @@
 	div[data-open="true"][role="dialog"][data-wide-modal],
 	div[data-open="true"][role="dialog"][data-enter="true"],
 	.IV3aBjz,
-	div[role="listbox"][data-dialog][data-open="true"] {
+	div[role="listbox"][data-dialog][data-open="true"],
+	.n3JR38_VJZNSqphkSnqGzgzMX5Ug1zkF, 
+	.GB_window,
+	.g_header,
+	.e96bf360[aria-selected=true], 
+	.f631ccbe[aria-selected=true] {
 		background-color: rgba(5, 5, 5, 0.281) !important;
 		border-radius: 12px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -257,5 +262,13 @@
 	._97298b1b,
 	._6d357d76 {
 		font-family: 'CC Wild Words', sans-serif !important;
+	}
+	
+	/* fix random ass menu */ 
+
+	.theme_dark .GB_window .g_header,
+	.GB_window .g_header,
+	.LII_q7R, .LII_q7R svg {
+		background-color: rgba(0, 204, 255, 0) !important;
 	}
 }
