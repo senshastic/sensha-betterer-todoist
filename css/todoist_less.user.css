@@ -150,6 +150,12 @@
 		opacity: 0.23 !important;
 	}
 
+	@hoverChannelSlide: {
+		margin-left: 10px !important;
+		transition: margin-left 0.2s ease;
+		background-color: transparent;
+	 }
+
 	/*ANCHOR [SNESHLIB - End]*/
 
 	/* Transition effect on hover for specific class */
