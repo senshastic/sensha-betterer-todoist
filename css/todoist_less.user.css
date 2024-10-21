@@ -275,6 +275,20 @@
 	._zbmK5I::before when (@grain =1) {
 		@noise();
 	}
+	
+	._zbmK5I::before,
+	main::before {
+		content: "" !important;
+		position: absolute !important;
+		top: 0 !important;
+		left: 0 !important;
+		width: 100% !important;
+		height: 100% !important;
+		pointer-events: none !important;
+		z-index: 1 !important;
+		background: url("https://grainy-gradients.vercel.app/noise.svg") repeat !important;
+		opacity: 0.2 !important;
+	}
 
 	@keyframes gradientAnimation {
 		@gradientAnimation();
