@@ -8,10 +8,10 @@
 @preprocessor 	less 
 @var select		gradType    "Gradient style" ["animated:Animated*", "flouss: Static", "nouss:None"]
 @var checkbox	grain "Grainy texture" 1
-@var color   	gradcolor1 "Gradient Color 1" rgb(43, 1, 91)
-@var color   	gradcolor2 "Gradient Color 2" rgb(122, 2, 54)
-@var color   	gradcolor3 "Gradient Color 3" rgb(8, 19, 54)
-@var color   	gradcolor4 "Gradient Color 4" rgb(26, 58, 102)
+@var color   	gradcolor1 "Gradient Color 1" rgb(8, 19, 54)
+@var color   	gradcolor2 "Gradient Color 2" rgb(26, 58, 102)
+@var color   	gradcolor3 "Gradient Color 3" rgb(43, 1, 91)
+@var color   	gradcolor4 "Gradient Color 4" rgb(122, 2, 54)
 
 ==/UserStyle== */
 @-moz-document domain("app.todoist.com") {
@@ -27,7 +27,7 @@
 
 	/*ANCHOR [DETACHED RULESETS] */
 	@gradientBackground: {
-		background: linear-gradient(109.6deg, @gradcolor3 0%, @gradcolor4 25%, @gradcolor1 50%, @gradcolor2 100%);
+		background: linear-gradient(109.6deg, @gradcolor1 0%, @gradcolor2 25%, @gradcolor3 50%, @gradcolor4 100%);
 	}
 
 	@gradientAnimation: {
@@ -154,25 +154,26 @@
 		z-index: -1 !important;
 		opacity: 0.23 !important;
 	}
-	
-
 
 
 	@boxShadowHover: {
 		box-shadow: 0 0px 10px rgba(0, 204, 255, 0.6);
 		background-color: rgba(0, 81, 255, 0.1);
 	}
-	
-	/* ANCHOR [ANIMATIONS] */ 
-	
+
+	@textArea: {
+		border: 1.5px solid @creamColor !important;
+		background-color: transparent !important;
+	}
+
+	/* ANCHOR [ANIMATIONS] */
 	@hoverChannelSlide: {
 		margin-left: 10px !important;
 		transition: margin-left 0.2s ease;
 		background-color: transparent;
 	}
-	
-	/* Snake */ 
-	
+
+	/* Snake */
 	@snakeTarget: {
 		position: relative;
 		padding: 16px;
@@ -181,8 +182,8 @@
 		z-index: 1;
 		overflow: hidden;
 	}
-	
-	
+
+
 	@snakeBefore: {
 		content: '';
 		position: absolute;
@@ -201,7 +202,7 @@
 		mask-composite: exclude;
 		z-index: -1;
 	}
-	
+
 	@keyframes smoothSnakeLine {
 		0% {
 			background-position: 0% 50%;
@@ -250,7 +251,7 @@
 
 
 	main when (@gradType =nouss) {
-		background-color: @gradcolor3 !important;
+		background-color: @gradcolor1 !important;
 	}
 
 	._zbmK5I when (@gradType =flouss) {
@@ -266,7 +267,7 @@
 
 
 	._zbmK5I when (@gradType =nouss) {
-		background-color: @gradcolor3 !important;
+		background-color: @gradcolor1 !important;
 	}
 	
 
@@ -502,5 +503,30 @@
 		margin-top: 3px;
 	}
 	
+	.section header button.collapser,
+	.theme_dark .task_list_item:hover .task_list_item__actions, .theme_dark .task_list_item__actions__active,
+	.theme_dark .board_task:focus .board_task__details__actions, .theme_dark .board_task:hover .board_task__details__actions, .theme_dark .board_task__details__actions--is_expanded {
+		@disappear();
+	}
+	
+	.Z0HemHa {
+		background-color: transparent !important;
+	}
+	
+	.task_list_item .task_list_item__collapser:hover, .task_list_item .task_list_item__drag_handle:hover,
+	.section_drag_and_drop_handler:hover {
+		@buttonsHover();
+	}
+	
+	.theme_dark .task_list_item:hover .task_list_item__actions, .theme_dark .task_list_item__actions__active,
+	.theme_dark .board_task:focus .board_task__details__actions, .theme_dark .board_task:hover .board_task__details__actions, .theme_dark .board_task__details__actions--is_expanded {
+		@backdrop();
+	}
+	
+	
+	.theme_dark .board_task__details__actions__menu_button:not(:disabled):focus, .theme_dark .board_task__details__actions__menu_button:not(:disabled):hover, .theme_dark .board_task__details__actions__person_picker:not(:disabled):focus, .theme_dark .board_task__details__actions__person_picker:not(:disabled):hover,
+	.theme_dark .task_list_item__actions a:not(:disabled):focus, .theme_dark .task_list_item__actions a:not(:disabled):hover, .theme_dark .task_list_item__actions > button:not(:disabled):focus, .theme_dark .task_list_item__actions > button:not(:disabled):hover{
+		@buttonsHover();
+	}
 }
 
