@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           sensha's betterer todoist
 @namespace      github.com/openstyles/stylus
-@version        2.1.12
+@version        2.1.13
 @description    A new userstyle
 @author         sensha
 @updateURL		https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/css/todoist_less.user.css
@@ -558,6 +558,12 @@
 	
 	.IIqv46p:hover:not(:focus-visible):after, .IIqv46p:hover:not(:focus-visible):before,
 	.IIqv46p:hover:not(:focus-visible)::after, .IIqv46p:hover:not(:focus-visible)::before{
+		background-color: transparent !important;
+	}
+
+
+	.board_task__details__actions__menu_button[aria-expanded="true"],
+	.board_task__details__actions__menu_button[aria-expanded=true] {
 		background-color: transparent !important;
 	}
 
