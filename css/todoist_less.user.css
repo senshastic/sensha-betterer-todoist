@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           sensha's betterer todoist
 @namespace      github.com/openstyles/stylus
-@version        2.1.13
+@version        2.1.14
 @description    A new userstyle
 @author         sensha
 @updateURL		https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/css/todoist_less.user.css
@@ -244,6 +244,13 @@
 
 
 	main when (@gradType =animated) {
+		@gradientBackground();
+		background-size: 400% 400%;
+		animation: gradientAnimation 20s ease infinite;
+	}
+	
+	.theme_dark .loading_screen,
+	.loading_screen {
 		@gradientBackground();
 		background-size: 400% 400%;
 		animation: gradientAnimation 20s ease infinite;
@@ -563,8 +570,29 @@
 
 
 	.board_task__details__actions__menu_button[aria-expanded="true"],
-	.board_task__details__actions__menu_button[aria-expanded=true] {
+	.board_task__details__actions__menu_button[aria-expanded=true],
+	html, body, body :not(iframe) {
 		background-color: transparent !important;
+	}
+	
+	.theme_dark .loading_screen--logo .logo_bg{
+		fill: @gradcolor4;
+
+	}
+	
+	.board_add_section_trigger__label{
+		@backdrop();
+		color: @creamColorMuted;
+		padding: 10px !important;
+	}
+	
+	.board_add_section_trigger__label:hover{
+		@transparentButtonsHover();
+		color: @creamColor;
+	}
+	
+	 .hover_action_button{
+		color: @creamColor !important;
 	}
 
 }
