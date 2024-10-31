@@ -549,7 +549,7 @@
 	}
 
 
-	/* ANCHOR [MY PROJECTS] */
+	/* ANCHOR [MY PROJECTS PAGE] */
 
 	li[role="treeitem"]:hover{
 		@buttonsHover();
