@@ -555,6 +555,10 @@
 		@buttonsHover();
 	}
 	
+	.IIqv46p:hover:not(:focus-visible):after, .IIqv46p:hover:not(:focus-visible):before,
+	.IIqv46p:hover:not(:focus-visible)::after, .IIqv46p:hover:not(:focus-visible)::before{
+		background-color: transparent !important;
+	}
 
 }
 
