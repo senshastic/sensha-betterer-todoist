@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           sensha's betterer todoist
 @namespace      github.com/openstyles/stylus
-@version        2.1.7
+@version        2.1.8
 @description    A new userstyle
 @author         sensha
 @updateURL		https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/css/todoist_less.user.css
@@ -519,14 +519,29 @@
 	}
 	
 	.theme_dark .task_list_item:hover .task_list_item__actions, .theme_dark .task_list_item__actions__active,
-	.theme_dark .board_task:focus .board_task__details__actions, .theme_dark .board_task:hover .board_task__details__actions, .theme_dark .board_task__details__actions--is_expanded {
+	.theme_dark .board_task:focus .board_task__details__actions, .theme_dark .board_task:hover .board_task__details__actions, .theme_dark .board_task__details__actions--is_expanded,
+	.ejnfExE::before{
 		@backdrop();
 	}
 	
 	
 	.theme_dark .board_task__details__actions__menu_button:not(:disabled):focus, .theme_dark .board_task__details__actions__menu_button:not(:disabled):hover, .theme_dark .board_task__details__actions__person_picker:not(:disabled):focus, .theme_dark .board_task__details__actions__person_picker:not(:disabled):hover,
-	.theme_dark .task_list_item__actions a:not(:disabled):focus, .theme_dark .task_list_item__actions a:not(:disabled):hover, .theme_dark .task_list_item__actions > button:not(:disabled):focus, .theme_dark .task_list_item__actions > button:not(:disabled):hover{
+	.theme_dark .task_list_item__actions a:not(:disabled):focus, .theme_dark .task_list_item__actions a:not(:disabled):hover, .theme_dark .task_list_item__actions > button:not(:disabled):focus, .theme_dark .task_list_item__actions > button:not(:disabled):hover,
+	.ejnfExE::before {
 		@buttonsHover();
 	}
+	
+	/* ANCHOR [CALENDAR VIEW] */
+	
+	.fc .fc-highlight{
+		@backdrop();
+	}
+	
+	.task_editor__editing_area, .task_editor.focus-marker-enabled-within,
+	.no-focus-marker {
+		@disappear();
+	}
+	
+
 }
 
