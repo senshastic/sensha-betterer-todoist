@@ -541,6 +541,12 @@
 	.no-focus-marker {
 		@disappear();
 	}
+
+	/* ANCHOR [SIDEBAR] */
+	body:not(.dnd_active) .WBkT27H, body:not(.dnd_active) .nuMVpup:focus-within:focus-visible,
+	body:not(.dnd_active) .WBkT27H, body:not(.dnd_active) .nuMVpup:focus-within:focus-visible{
+		background-color: : transparent !important;
+	}
 	
 
 }
