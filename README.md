@@ -20,9 +20,6 @@ If you do not like the gradient or you are like me and you like changing colors 
 
 You should use the Dark Theme in Todoist - so all the letters go white and not black. 
 
-If you have a mac and are using ArcBrowser, then only use whatever is in the ArcBoost folder and copy/paste the CSS and js scripts in the relevant space, it will **just work**. 
-
-If you do not, go through the other two folders and follow these instead: 
 
 Install the css using Stylus
 
