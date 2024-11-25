@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           sensha's betterer todoist
 @namespace      github.com/openstyles/stylus
-@version        2.1.14
+@version        2.1.15
 @description    A new userstyle
 @author         sensha
 @updateURL		https://github.com/senshastic/sensha-betterer-todoist/raw/refs/heads/main/css/todoist_less.user.css
@@ -475,8 +475,7 @@
 
 	/* Font face definition for custom font */
 	@font-face {
-		font-family: 'CC Wild Words';
-		src: local('c');
+		src: local('CC Wild Words');
 		font-weight: normal;
 		font-style: normal;
 	}
@@ -488,8 +487,9 @@
 
 	/* Apply custom font with fallback */
 	._97298b1b,
-	._6d357d76 {
-		font-family: 'CC Wild Words', sans-serif !important;
+	._6d357d76,
+    h1 {
+		font-family: 'CC Wild Words' !important;
 	}
 	
 	/* fix random ass menu */ 
@@ -594,6 +594,23 @@
 	 .hover_action_button{
 		color: @creamColor !important;
 	}
+
+    .section header {
+	@backdrop();
+        padding: 10px !important;
+    }
+
+/*
+button.collapser{
+    position: fixed !important;
+    left: -23px !important;
+}
+
+*/ 
+
+button.collapser{
+    display: none !important;
+}
 
 }
 
